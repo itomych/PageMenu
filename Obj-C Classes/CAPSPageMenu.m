@@ -840,9 +840,9 @@ NSString * const CAPSPageMenuOptionHideTopMenuBar                       = @"hide
             }
         }
         
-        for (UIView *view in _controllerScrollView.subviews) {
-            view.frame = CGRectMake(self.view.frame.size.width * (CGFloat)(_currentPageIndex), _menuHeight, _controllerScrollView.frame.size.width, self.view.frame.size.height - _menuHeight);
-        }
+        [_controllerScrollView.subviews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger index, BOOL *stop) {
+            view.frame = CGRectMake(self.view.frame.size.width * index, _menuHeight, _controllerScrollView.frame.size.width, self.view.frame.size.height - _menuHeight);
+        }];
         
         CGFloat xOffset = (CGFloat)(self.currentPageIndex) * _controllerScrollView.frame.size.width;
         [_controllerScrollView setContentOffset:CGPointMake(xOffset, _controllerScrollView.contentOffset.y)];
