@@ -208,7 +208,7 @@ NSString * const CAPSPageMenuOptionHideTopMenuBar                       = @"hide
     _enableHorizontalBounce             = YES;
     _hideTopMenuBar                     = NO;
     
-    _currentOrientationIsPortrait   = YES;
+    _currentOrientationIsPortrait   = UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation]);
     _pageIndexForOrientationChange  = 0;
     _didLayoutSubviewsAfterRotation = NO;
     _didScrollAlready               = NO;
