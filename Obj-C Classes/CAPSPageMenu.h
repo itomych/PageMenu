@@ -31,6 +31,8 @@
 
 @interface CAPSPageMenu : UIViewController <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
+@property (nonatomic) BOOL orientationChangeDisable;
+
 @property (nonatomic, strong) UIScrollView *menuScrollView;
 @property (nonatomic, strong) UIScrollView *controllerScrollView;
 

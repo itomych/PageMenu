@@ -782,6 +782,10 @@ NSString * const CAPSPageMenuOptionHideTopMenuBar                       = @"hide
 
 - (void)viewDidLayoutSubviews
 {
+    if (self.orientationChangeDisable) {
+        return;
+    }
+    
     // Configure controller scroll view content size
     _controllerScrollView.contentSize = CGSizeMake(self.view.frame.size.width * (CGFloat)_controllerArray.count, self.view.frame.size.height - _menuHeight);
     
