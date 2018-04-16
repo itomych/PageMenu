@@ -53,11 +53,9 @@ class MenuItemView: UIView {
             self.setUpMenuItemView(pageMenu.configuration.menuItemWidth, menuScrollViewHeight: pageMenu.configuration.menuHeight, indicatorHeight: pageMenu.configuration.selectionIndicatorHeight, separatorPercentageHeight: pageMenu.configuration.menuItemSeparatorPercentageHeight, separatorWidth: pageMenu.configuration.menuItemSeparatorWidth, separatorRoundEdges: pageMenu.configuration.menuItemSeparatorRoundEdges, menuItemSeparatorColor: pageMenu.configuration.menuItemSeparatorColor)
         }
         
-        // Configure menu item label font if font is set by user
-        self.titleLabel!.font = pageMenu.configuration.menuItemFont
-        
         self.titleLabel!.textAlignment = NSTextAlignment.center
         self.titleLabel!.textColor = pageMenu.configuration.unselectedMenuItemLabelColor
+        self.titleLabel!.font = pageMenu.configuration.unselectedMenuItemFont
         
         //**************************拡張*************************************
         self.titleLabel!.adjustsFontSizeToFitWidth = pageMenu.configuration.titleTextSizeBasedOnMenuItemWidth
