@@ -33,6 +33,16 @@ open class CAPSPageMenu: UIViewController {
     
     // MARK: - Properties
 
+    public var isChangeControllerEnabled: Bool?  {
+        didSet {
+            guard let isChangeControllerEnabled = isChangeControllerEnabled  else {
+                return
+            }
+            menuScrollView.isUserInteractionEnabled = isChangeControllerEnabled
+            controllerScrollView.isScrollEnabled = isChangeControllerEnabled
+        }
+    }
+
     let menuScrollView = UIScrollView()
     let controllerScrollView = UIScrollView()
     var controllerArray : [UIViewController] = []
