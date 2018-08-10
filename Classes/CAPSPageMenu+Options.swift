@@ -45,4 +45,6 @@ public enum CAPSPageMenuOption {
     case scrollAnimationDurationOnMenuItemTap(Int)
     case centerMenuItems(Bool)
     case hideTopMenuBar(Bool)
+    case selectionIndicatorRoundCorners(Bool)
+    case selectionIndicatorOffsetY(CGFloat)
 }

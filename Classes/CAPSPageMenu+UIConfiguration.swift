@@ -62,6 +62,10 @@ extension CAPSPageMenu {
                 configuration.centerMenuItems = value
             case let .hideTopMenuBar(value):
                 configuration.hideTopMenuBar = value
+            case let .selectionIndicatorRoundCorners(value):
+                configuration.selectionIndicatorRoundCorners = value
+            case let .selectionIndicatorOffsetY(value):
+                configuration.selectionIndicatorOffsetY = value
             }
         }
         
@@ -245,8 +249,15 @@ extension CAPSPageMenu {
             }
         }
         
+        selectionIndicatorFrame.origin.y += configuration.selectionIndicatorOffsetY
         selectionIndicatorView = UIView(frame: selectionIndicatorFrame)
         selectionIndicatorView.backgroundColor = configuration.selectionIndicatorColor
+        
+        if configuration.selectionIndicatorRoundCorners {
+            selectionIndicatorView.layer.cornerRadius = min(selectionIndicatorFrame.width, selectionIndicatorFrame.height) / 2
+        }
+        
+        menuScrollView.clipsToBounds = false
         menuScrollView.addSubview(selectionIndicatorView)
     }
 }
