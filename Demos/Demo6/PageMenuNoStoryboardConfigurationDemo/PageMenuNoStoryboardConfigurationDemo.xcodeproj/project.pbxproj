@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EA407421A58A2C00AA7DC3 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EA407321A58A2C00AA7DC3 /* PageMenu.framework */; };
 		F023F2371E6DAF70000382EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F023F2361E6DAF70000382EF /* AppDelegate.swift */; };
 		F023F23E1E6DAF70000382EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F023F23D1E6DAF70000382EF /* Assets.xcassets */; };
 		F023F2411E6DAF70000382EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F023F23F1E6DAF70000382EF /* LaunchScreen.storyboard */; };
 		F023F24C1E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F023F24B1E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemoTests.swift */; };
 		F023F2571E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F023F2561E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemoUITests.swift */; };
 		F023F26F1E6DB253000382EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F023F26E1E6DB253000382EF /* ViewController.swift */; };
-		F023F2971E6DBA9A000382EF /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023F2961E6DBA9A000382EF /* PageMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09EA407321A58A2C00AA7DC3 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F023F2331E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageMenuNoStoryboardConfigurationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F023F2361E6DAF70000382EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F023F23D1E6DAF70000382EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		F023F2561E6DAF70000382EF /* PageMenuNoStoryboardConfigurationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuNoStoryboardConfigurationDemoUITests.swift; sourceTree = "<group>"; };
 		F023F2581E6DAF70000382EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F023F26E1E6DB253000382EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F023F2961E6DBA9A000382EF /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = "../../PageMenu/build/Debug-iphoneos/PageMenu.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F023F2971E6DBA9A000382EF /* PageMenu.framework in Frameworks */,
+				09EA407421A58A2C00AA7DC3 /* PageMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 		F023F2951E6DBA9A000382EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F023F2961E6DBA9A000382EF /* PageMenu.framework */,
+				09EA407321A58A2C00AA7DC3 /* PageMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EA407621A58A6200AA7DC3 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EA407521A58A6200AA7DC3 /* PageMenu.framework */; };
 		A68B5E521A6EF80B001199D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B5E511A6EF80B001199D4 /* AppDelegate.swift */; };
 		A68B5E541A6EF80B001199D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B5E531A6EF80B001199D4 /* ViewController.swift */; };
 		A68B5E571A6EF80B001199D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E551A6EF80B001199D4 /* Main.storyboard */; };
@@ -40,7 +41,6 @@
 		A68B5EA61A6F0106001199D4 /* woman3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E931A6F0106001199D4 /* woman3.jpg */; };
 		A68B5EA71A6F0106001199D4 /* woman4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E941A6F0106001199D4 /* woman4.jpg */; };
 		A68B5EA81A6F0106001199D4 /* woman5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E951A6F0106001199D4 /* woman5.jpg */; };
-		F023F29A1E6DBAA1000382EF /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023F2991E6DBAA1000382EF /* PageMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09EA407521A58A6200AA7DC3 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B5E4C1A6EF80B001199D4 /* PageMenuDemoSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageMenuDemoSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B5E501A6EF80B001199D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68B5E511A6EF80B001199D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		A68B5E931A6F0106001199D4 /* woman3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman3.jpg; sourceTree = "<group>"; };
 		A68B5E941A6F0106001199D4 /* woman4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman4.jpg; sourceTree = "<group>"; };
 		A68B5E951A6F0106001199D4 /* woman5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman5.jpg; sourceTree = "<group>"; };
-		F023F2991E6DBAA1000382EF /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = "../../PageMenu/build/Debug-iphoneos/PageMenu.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F023F29A1E6DBAA1000382EF /* PageMenu.framework in Frameworks */,
+				09EA407621A58A6200AA7DC3 /* PageMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +200,7 @@
 		F023F2981E6DBAA1000382EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F023F2991E6DBAA1000382EF /* PageMenu.framework */,
+				09EA407521A58A6200AA7DC3 /* PageMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

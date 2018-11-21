@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F023F2941E6DBA8E000382EF /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023F2931E6DBA8E000382EF /* PageMenu.framework */; };
+		09EA407021A589AD00AA7DC3 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EA406F21A589AD00AA7DC3 /* PageMenu.framework */; };
 		F04315961E6D15CA00D8B3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04315951E6D15CA00D8B3FD /* AppDelegate.swift */; };
 		F04315981E6D15CA00D8B3FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04315971E6D15CA00D8B3FD /* ViewController.swift */; };
 		F043159B1E6D15CA00D8B3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04315991E6D15CA00D8B3FD /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F023F2931E6DBA8E000382EF /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = "../../PageMenu/build/Debug-iphoneos/PageMenu.framework"; sourceTree = "<group>"; };
+		09EA406F21A589AD00AA7DC3 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04315921E6D15CA00D8B3FD /* PageMenuConfigurationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageMenuConfigurationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04315951E6D15CA00D8B3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04315971E6D15CA00D8B3FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F023F2941E6DBA8E000382EF /* PageMenu.framework in Frameworks */,
+				09EA407021A589AD00AA7DC3 /* PageMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 		F023F2921E6DBA8D000382EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F023F2931E6DBA8E000382EF /* PageMenu.framework */,
+				09EA406F21A589AD00AA7DC3 /* PageMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
