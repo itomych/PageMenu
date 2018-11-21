@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EA407621A58A6200AA7DC3 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EA407521A58A6200AA7DC3 /* PageMenu.framework */; };
 		A68B5E521A6EF80B001199D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B5E511A6EF80B001199D4 /* AppDelegate.swift */; };
 		A68B5E541A6EF80B001199D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B5E531A6EF80B001199D4 /* ViewController.swift */; };
 		A68B5E571A6EF80B001199D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E551A6EF80B001199D4 /* Main.storyboard */; };
@@ -40,7 +41,6 @@
 		A68B5EA61A6F0106001199D4 /* woman3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E931A6F0106001199D4 /* woman3.jpg */; };
 		A68B5EA71A6F0106001199D4 /* woman4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E941A6F0106001199D4 /* woman4.jpg */; };
 		A68B5EA81A6F0106001199D4 /* woman5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A68B5E951A6F0106001199D4 /* woman5.jpg */; };
-		F023F29A1E6DBAA1000382EF /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023F2991E6DBAA1000382EF /* PageMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09EA407521A58A6200AA7DC3 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B5E4C1A6EF80B001199D4 /* PageMenuDemoSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageMenuDemoSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B5E501A6EF80B001199D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68B5E511A6EF80B001199D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		A68B5E931A6F0106001199D4 /* woman3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman3.jpg; sourceTree = "<group>"; };
 		A68B5E941A6F0106001199D4 /* woman4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman4.jpg; sourceTree = "<group>"; };
 		A68B5E951A6F0106001199D4 /* woman5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman5.jpg; sourceTree = "<group>"; };
-		F023F2991E6DBAA1000382EF /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = "../../PageMenu/build/Debug-iphoneos/PageMenu.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F023F29A1E6DBAA1000382EF /* PageMenu.framework in Frameworks */,
+				09EA407621A58A6200AA7DC3 /* PageMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +200,7 @@
 		F023F2981E6DBAA1000382EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F023F2991E6DBAA1000382EF /* PageMenu.framework */,
+				09EA407521A58A6200AA7DC3 /* PageMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,16 +250,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Niklas Fahl";
 				TargetAttributes = {
 					A68B5E4B1A6EF80B001199D4 = {
 						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 					};
 					A68B5E601A6EF80B001199D4 = {
 						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						TestTargetID = A68B5E4B1A6EF80B001199D4;
 					};
 				};
@@ -386,14 +386,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -432,14 +440,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -471,7 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caps.ua.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -483,7 +499,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caps.ua.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -503,7 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caps.ua.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PageMenuDemoSegmentedControl.app/PageMenuDemoSegmentedControl";
 			};
 			name = Debug;
@@ -520,7 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caps.ua.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PageMenuDemoSegmentedControl.app/PageMenuDemoSegmentedControl";
 			};
 			name = Release;
