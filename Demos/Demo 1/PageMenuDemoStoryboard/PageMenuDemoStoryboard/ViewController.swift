@@ -53,7 +53,8 @@ class ViewController: UIViewController {
             .viewBackgroundColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 1.0)),
             .selectionIndicatorColor(UIColor.orange),
             .bottomMenuHairlineColor(UIColor(red: 70.0/255.0, green: 70.0/255.0, blue: 80.0/255.0, alpha: 1.0)),
-            .menuItemFont(UIFont(name: "HelveticaNeue", size: 13.0)!),
+            .selectedMenuItemFont(UIFont(name: "HelveticaNeue", size: 13.0)!),
+            .unselectedMenuItemFont(UIFont(name: "HelveticaNeue", size: 12.0)!),
             .menuHeight(40.0),
             .menuItemWidth(90.0),
             .centerMenuItems(true)
