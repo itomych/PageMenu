@@ -170,9 +170,7 @@ extension CAPSPageMenu {
         for controller in controllerArray {
             if index == 0.0 {
                 // Add first two controllers to scrollview and as child view controller
-                controller.viewWillAppear(true)
                 addPageAtIndex(0)
-                controller.viewDidAppear(true)
             }
             
             // Set up menu item for menu scroll view
